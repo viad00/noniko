@@ -1,10 +1,12 @@
 {% extends 'layout.html' %}
 {% load i18n %}
 {% block body %}
-    <div class="jumbotron">
-    <h1>{% blocktrans %}Welcome to {{ app_name }} official site!{% endblocktrans %}</h1>
-    <p class="lead">
-        {{ app_text }}
+    <div class="main-container">
+    <h1>{{ app_name }}</h1>
+    <p>
+        {{ app_description_text|safe }}
     </p>
     </div>
+    <br/>
+    <hr/>
 {% endblock %}

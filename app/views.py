@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.utils.translation import gettext as _
 from django.conf import settings
+from app.settings_db import get_setting
 
 
 # Create your views here.

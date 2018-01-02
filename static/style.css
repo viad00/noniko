@@ -1,4 +1,27 @@
+.main-container {
+    text-align: center;
+}
 body {
-  min-height: 75rem;
-  padding-top: 4.5rem;
+    background-color: black;
+    color: lime;
+}
+::selection {
+    color: black;
+    background-color: lime;
+}
+a {
+    color: lime;
+}
+table, td, th {
+    border: 1px solid;
+}
+table {
+    width: 100%;
+}
+.error {
+    color: red;
+    font-family: Roboto;
+}
+hr {
+    border-color: lime;
 }
