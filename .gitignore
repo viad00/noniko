@@ -55,6 +55,6 @@ docs/_build/
 
 .idea/
 db.sqlite3
-migrations/*
-!migrations/__init__.py
+app/migrations/*
+!app/migrations/__init__.py
 venv/

@@ -12,4 +12,5 @@ def home(request):
         'title':  _('Home'),
         'app_name': settings.APP_NAME,
         'app_description_text': get_setting('app_description_text'),
+        'app_mainpage_html': get_setting('app_mainpage_html'),
     })

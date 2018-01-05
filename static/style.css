@@ -4,6 +4,8 @@
 body {
     background-color: black;
     color: lime;
+    max-width: 800px;
+    margin: auto;
 }
 ::selection {
     color: black;
