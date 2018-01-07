@@ -4,10 +4,10 @@
     <div class="main-container">
     <h1>{{ app_name }}</h1>
     <p>
-        {{ app_description_text|safe }}
+        {{ app_home_head_html|safe }}
     </p>
     </div>
     <br/>
     <hr/>
-    {{ app_mainpage_html|safe }}
+    {{ app_home_body_html|safe }}
 {% endblock %}

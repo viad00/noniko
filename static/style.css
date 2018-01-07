@@ -22,7 +22,7 @@ table {
 }
 .error {
     color: red;
-    font-family: Roboto;
+    font-family: monospace;
 }
 hr {
     border-color: lime;
