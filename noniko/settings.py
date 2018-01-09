@@ -126,8 +126,17 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
 
+
+# Media files dir (For testing purposes! This is not suitable for production)
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+
+
+# App name (Used in templates)
 APP_NAME = 'NoNiko'
 
+
+# Try to load local setting file
 try:
     from local_settings import *
 except ImportError:

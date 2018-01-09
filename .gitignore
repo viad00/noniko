@@ -58,3 +58,4 @@ db.sqlite3
 app/migrations/*
 !app/migrations/__init__.py
 venv/
+media/*
