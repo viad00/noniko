@@ -1,5 +1,4 @@
-from django.core.exceptions import ObjectDoesNotExist
-from app.models import Setting
+from .models import Setting
 from django.conf import settings
 
 

@@ -1,4 +1,5 @@
 from django.db import models
+from tinymce.models import HTMLField
 
 # Create your models here.
 
@@ -8,7 +9,7 @@ class Setting(models.Model):
         return 'Setting {0} - {1} ({2})'.format(self.name, self.language, self.id)
     name = models.CharField(max_length=100)
     language = models.CharField(max_length=5)
-    string = models.TextField()
+    string = HTMLField()
 
 
 class File(models.Model):

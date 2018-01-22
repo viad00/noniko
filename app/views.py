@@ -1,9 +1,9 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.utils.translation import gettext as _
 from django.conf import settings
-from app.settings_db import get_setting
+from .settings_db import get_setting
 from django.utils import translation
-from app.models import File
+from .models import File
 from django.http import HttpResponseBadRequest
 
 

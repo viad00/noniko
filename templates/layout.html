@@ -4,6 +4,7 @@
 <html lang="{{ LANGUAGE_CODE }}">
 <head>
     <meta charset="UTF-8">
+    <meta name="theme-color" content="#00FF00">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{{ description }}" />
     <meta name="keywords" content="{{ keywords }}" />
@@ -15,15 +16,15 @@
 <table>
     <tr>
         <th><a href="{% url "home" %}">{{ app_name }}</a></th>
-        <td><a href="{% url "home" %}">Home</a></td>
-        <td><a href="#">Downloads</a></td>
-        <td><a href="#">About</a></td>
+        <td><a href="{% url "home" %}">{% trans "Home" %}</a></td>
+        <td><a href="#">{% trans "Downloads" %}</a></td>
+        <td><a href="#">{% trans "About" %}</a></td>
     </tr>
 </table>
 {% block body %}
 {% endblock %}
 <hr/>
-<p align="center">Copyright {{ app_name }} developers - {% now "Y" %}</p>
+<p align="center">{% blocktrans %}Copyright {{ app_name }} developers {% endblocktrans %} - {% now "Y" %}</p>
 </body>
 {% block scripts %}
 {% endblock %}

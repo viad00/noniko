@@ -1,5 +1,5 @@
 from django.contrib import admin
-from app.models import Setting, File
+from .models import Setting, File
 from django.conf import settings
 
 # Register your models here.
